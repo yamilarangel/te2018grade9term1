@@ -1,33 +1,39 @@
-const READLINE = require("readline-sync");
 
-// **** Problem 1: R-rated ****
-// You cannot see an R-rated movie unless you are at least 18, or you are with
-// an adult. Write code that prints whether or not someone can see an
-// R-rated movie.
+// 1st Problem 
+const READLINE = require("readline-sync");
 console.log("*** Problem 1: R-rated ***");
 let age = READLINE.question("Enter your age: ");
 let withAdult = READLINE.question("Are you with an adult? (yes or no): ");
+if (age >= 18 && withAdult ){
+console.log("You can watch the movie")
+}else{
+console.log("You need an adult to watch the movie")
+}
 
 
-// **** Problem 2: Umbrella ****
-// You should bring an umbrella when you travel, but only if it is raining.
-// However, if it is thunderstorming, you should not bring an umbrella since
-// that's bad luck. Write code that prints if someone should bring an umbrella
-// with them.
+// 2nd problem
 console.log("*** Problem 2: Umbrella ***");
 let raining = READLINE.question("Is it raining? (yes or no): ");
 let thunderstorming = READLINE.question("Is it thunderstorming? (yes or no): ");
+if (raining == "yes" || !thunderstorming ){
+console.log("Bring an umbrella")
+}else{
+console.log("You dont need an umbrella")	
+}
+  
 
-
-// **** Problem 3: Monkey Trouble ****
-// There are two monkeys: Bubbles and Spankey. You are in trouble if both of
-// them are smiling, or if neither are smiling. Write code that prints if we
-// are in trouble.
+// 3rd problem
 console.log("*** Problem 3: Monkey Trouble ***");
 let bubbles = READLINE.question("Is Bubbles smiling? (yes or no): ");
 let spankey = READLINE.question("Is Spankey smiling? (yes or no): ");
+if (bubbles == "yes" && spankey == "yes" ){
+console.log("You are in trouble")
+}else{
+console.log("You are not in trouble")
+}
 
 
+// 4th problem
 // **** Problem 4: First Place ****
 // Write code that prints the largest of three scores. If there is a tie for
 // first place, simply print one of the tie winners.
@@ -35,8 +41,15 @@ console.log("*** Problem 4: First Place ***");
 let score1 = READLINE.question("Enter the first score: ");
 let score2 = READLINE.question("Enter the second score: ");
 let score3 = READLINE.question("Enter the third score: ");
-
-
+if (score1 > score3 && score1 > score2){
+console.log("Score one is the greatest score")
+}
+if (score2 > score1 && score2 > score3){
+console.log("Score two is the greatest scorn")
+}
+else (score3 > score2 && scoe3 > score1){
+"Score 3 is the greatest score" 
+}
 // **** Problem 5: Phone Shopping ****
 // At a phone store, you can afford various "tiers" of phones based on how
 // much money you have.

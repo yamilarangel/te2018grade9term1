@@ -44,7 +44,7 @@ if(enterHouse == "y" || enterHouse == "yes") {
       console.log(`${player.name} You continue onto the next room.`);
 
       let pickuporleave = READLINE.question("You see a table. on the table there is a knife. Will you pick it up? (pick it up or leave it")
-
+      
     }
   }
 
@@ -53,7 +53,7 @@ if(enterHouse == "y" || enterHouse == "yes") {
 }//end if 
 else {
   player.intellect++;
-  console.log(`${player.name} decides not to open the door. However...`);
+  console.log(`${player.name} decides not to open the door.`);
   // continue the story
 
 }//end else 

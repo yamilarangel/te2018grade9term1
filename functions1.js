@@ -1,13 +1,13 @@
 const READLINE = require("readline-sync");
 
-// **** Problem 1: printMessage() ****
-// Write a function that prints any message you want.
-
+dialouge: function(){
+	console.log ("Ayana is a crybaby.");
+}
 
 // **** Problem 2: printFiveMessages() ****
 // Write a function that calls printMessage() five times.
 
-
+printMessage()
 // **** Problem 3: getUserInput() ****
 // Write a function that asks the user if they'd like to print your message
 // once or five times. Then call one of the two functions above based on

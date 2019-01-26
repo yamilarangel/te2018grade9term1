@@ -9,12 +9,18 @@ firstLast6([6, 1, 2, 3]) → true
 firstLast6([13, 6, 1, 2, 3]) → false
 *******************************************************************************/
 
-function firstLast6(nums) {
+ function firstLast6(nums) {
+  if (nums[0] == 6 || nums[nums.length-1] == 6){
+    return true
+  }
+  else{
+    return false
 
-}
+  }
 
+} 
 // Remove comment below to test this function.
-//testFirstLast6();
+testFirstLast6();
 
 /******************************************************************************
                                    midThree()
@@ -28,7 +34,9 @@ midThree([1, 2, 3]) → [1, 2, 3]
 *******************************************************************************/
 
 function midThree(nums) {
-
+  start = math.floor (nums.length/2)-1
+  end = math.floor (nums.length/2)+2
+  let newArr = nums.slice(start,end)
 }
 
 // Remove comment below to test this function.
@@ -74,6 +82,8 @@ copyEvens([6, 1, 2, 4, 5, 8], 3) → [6, 2, 4]
 *******************************************************************************/
 
 function copyEvens(nums, count) {
+  if letnums()
+
 
 }
 

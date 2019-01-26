@@ -27,6 +27,22 @@ makes10(9, 9) → false
 makes10(1, 9) → true
 *******************************************************************************/
 
+function makes10(a,b){
+  if((a + b == 10) ||(a == 10 || b == 10)){
+   return true
+
+  }else{
+    return false
+
+
+}
+}
+console.log(makes10(2,5))
+
+
+
+
+
 
 
 // Remove comment below to test this function.
@@ -45,6 +61,26 @@ parrotTrouble(true, 6) → true
 parrotTrouble(true, 7) → false
 parrotTrouble(false, 6) → false
 *******************************************************************************/
+
+function parrotTrouble(talking,hour){
+
+
+  if((hour < 7 || hour >20) &&(talking == true)){
+
+    return true 
+  }
+
+  else {
+
+    return false
+  }
+
+
+
+
+
+
+
 
 
 
